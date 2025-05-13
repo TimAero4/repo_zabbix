@@ -1,6 +1,6 @@
-# repo_zabbix
+# <ins>repo_zabbix</ins>
 
-#<ins>Команды для установки Zabbix Server</ins>
+# <ins>Команды для установки Zabbix Server</ins>
 
 ## sudo -s
 ## установка СУБД
@@ -23,10 +23,10 @@
 ## systemctl status zabbix-server apache2
 ## ip a -> 10.0.2.15
 ## http://10.0.2.15/zabbix
-[autorization](image/autorize.png)
-[main_page](image/first_page.png)
+* [autorization](image/autorize.png)
+* [main_page](image/first_page.png)
 
-#<ins>Команды для установки Zabbix Agent</ins>
+# <ins>Команды для установки Zabbix Agent</ins>
 
 ## sudo -s
 ## установка СУБД
@@ -40,10 +40,10 @@
 ## systemctl restart zabbix-agent
 ## systemctl enable zabbix-agent
 
-#<ins>Постановка хоста с Zabbix agent на мониторинг</ins>
+# <ins>Постановка хоста с Zabbix agent на мониторинг</ins>
 ## Добавляем основную информацию (адрес, днс) о хосте,где находится агент(в веб интерфейсе заббикс сервера).
 ## nano /etc/zabbix/zabbix_agentd.conf в файле меняем Server=ipv4
 ## systemctl restart/status zabbix-agent
 ## tail -f /var/log/zabbix/zabbix_agentd.log (в результате видим, что подключения нету)
-[hosts](image/hosts.png)
-[monitoring](image/latest.png)
+* [hosts](image/hosts.png)
+* [monitoring](image/latest.png)
